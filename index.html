@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Photography Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Photography Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve our services</p>
+    </header>
+  <form id="survey-form">
+    <section class="survey-form-info">
+    <div>
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" required placeholder="Enter your name">
+    </div>
+    <div>
+    <label id="email-label"  for="email">Email</label>
+    <input id="email" type="email" required placeholder="Enter your email">
+    </div>
+    <div>
+    <label id="number-label" for="number">Number</label>
+    <input id="number" type="number" min="9" max="10" placeholder="Enter your number">
+    </div>
+    </section>
+    <section>
+    <p>What type of photography are you most interested in?</p>
+      <select id="dropdown">
+        <option value="" disable selected hidden>Select your interest</option>
+        <option>Portraits</option>
+        <option>Events (weddings, parties, etc.)</option>
+        <option>Product / Commercial</option>
+        <option>Landscape / Nature</option>
+      </select>
+    </section>
+    <section class="radio-input">
+      <p>Which two photography package do you find most appealing?</p>
+      <label><input type="radio" name="choice-1" value="Package-1"> Package 1 (Outdoor)</label><br>
+        <label><input type="radio" name="choice-1" value="Package-2"> Package 2 (Outdoor)</label><br>
+        <label><input type="radio" name="choice-2" value="Package-3"> Package 3 (Indoor)</label><br>
+        <label><input type="radio" name="choice-2" value="Package-4"> Package 4 (Indoor</label>
+    </section>
+    <section>
+      <p>How important is editing/retouching in your photos?</p>
+        <label><input type="checkbox" name="game-genre" value="multiplayer"> Not important at all</label><br>
+        <label><input type="checkbox" name="game-genre" value="singl-player"> Somewhat important</label><br>
+        <label><input type="checkbox" name="game-genre" value="storymode"> Important</label><br>
+        <label><input type="checkbox" name="game-genre" value="all"> Very important</label>
+    </section>
+    <section>
+     <textarea Placeholder="Type your message..."></textarea>
+    </section>
+      <input id="submit" type="submit" name="submit">
+  </form>
+  </body>
+  </html>
